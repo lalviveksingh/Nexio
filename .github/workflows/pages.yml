@@ -1,0 +1,43 @@
+name: Deploy demo to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: Nexio-*/package-lock.json
+
+      - name: Build the three concepts as static sites
+        run: |
+          mkdir -p site
+          for i in 1 2 3; do
+            (cd "Nexio-$i" && npm ci --no-audit --no-fund && npm run build:pages)
+            cp -r "Nexio-$i/out" "site/Nexio-$i"
+          done
+          cp pages-landing/index.html site/index.html
+          touch site/.nojekyll
+
+      - name: Publish to the gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
+          force_orphan: true

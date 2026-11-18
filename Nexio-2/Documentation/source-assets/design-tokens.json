@@ -1,0 +1,32 @@
+{
+  "concept": "Intelligent Systems",
+  "brand": "NEXIO",
+  "colors": {
+    "primary": {
+      "value": "#365CF5"
+    },
+    "ink": {
+      "value": "#111C36"
+    },
+    "paper": {
+      "value": "#F6F8FC"
+    },
+    "surface": {
+      "value": "#E7ECF5"
+    },
+    "accent": {
+      "value": "#CBEA63"
+    }
+  },
+  "theme": {
+    "default": "light",
+    "persist": "localStorage",
+    "followSystemPreference": false
+  },
+  "breakpoints": {
+    "mobile": "360\u2013767px",
+    "tablet": "768\u20131023px",
+    "laptop": "1024\u20131279px",
+    "desktop": "1280px and above"
+  }
+}

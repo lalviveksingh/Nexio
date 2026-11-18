@@ -1,0 +1,32 @@
+{
+  "concept": "Editorial Intelligence",
+  "brand": "NEXIO",
+  "colors": {
+    "primary": {
+      "value": "#3F776D"
+    },
+    "ink": {
+      "value": "#1F2925"
+    },
+    "paper": {
+      "value": "#F5F2EA"
+    },
+    "surface": {
+      "value": "#E8E3D9"
+    },
+    "accent": {
+      "value": "#B27854"
+    }
+  },
+  "theme": {
+    "default": "light",
+    "persist": "localStorage",
+    "followSystemPreference": false
+  },
+  "breakpoints": {
+    "mobile": "360\u2013767px",
+    "tablet": "768\u20131023px",
+    "laptop": "1024\u20131279px",
+    "desktop": "1280px and above"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "concept": "02_Intelligent_Systems",
+  "status": "Concept imagery for website art direction; not actual client-supplied photography.",
+  "colour_grade": {
+    "warm": 0.0,
+    "cool": 0.035,
+    "contrast": 1.06,
+    "sat": 0.98,
+    "brightness": 1.01
+  },
+  "assets": [
+    {
+      "file": "Images/01-classroom-hero.jpg",
+      "role": "Homepage hero / classroom solutions",
+      "source": "Standalone generated classroom photograph",
+      "notes": "No visible brand mark; use as concept photography."
+    },
+    {
+      "file": "Images/02-teacher-in-class.jpg",
+      "role": "Teacher In Class",
+      "source": "Cropped from generated photographic concept sheet",
+      "notes": "Standalone crop extracted from a generated photographic contact sheet; inspect before live use."
+    },
+    {
+      "file": "Images/03-interactive-touch-closeup.jpg",
+      "role": "Interactive Touch Closeup",
+      "source": "Cropped from generated photographic concept sheet",
+      "notes": "Standalone crop extracted from a generated photographic contact sheet; inspect before live use."
+    },
+    {
+      "file": "Images/04-team-collaboration.jpg",
+      "role": "Team Collaboration",
+      "source": "Cropped from generated photographic concept sheet",
+      "notes": "Standalone crop extracted from a generated photographic contact sheet; inspect before live use."
+    },
+    {
+      "file": "Images/05-av-camera-and-audio.jpg",
+      "role": "Av Camera And Audio",
+      "source": "Cropped from generated photographic concept sheet",
+      "notes": "Standalone crop extracted from a generated photographic contact sheet; inspect before live use. Product appearance and any visible on-device marks are illustrative, not verified NEXIO SKUs/specifications."
+    },
+    {
+      "file": "Images/06-in-room-display-installation.jpg",
+      "role": "Display installed in a contemporary room",
+      "source": "Cropped from generated photographic concept sheet",
+      "notes": "Standalone crop extracted from a generated photographic contact sheet; inspect before live use. Product appearance and any visible on-device marks are illustrative, not verified NEXIO SKUs/specifications."
+    },
+    {
+      "file": "Images/07-classroom-display-context.jpg",
+      "role": "Classroom display in context",
+      "source": "Cropped from generated photographic concept sheet",
+      "notes": "Standalone crop extracted from a generated photographic contact sheet; inspect before live use. Product appearance and any visible on-device marks are illustrative, not verified NEXIO SKUs/specifications."
+    },
+    {
+      "file": "Images/08-bezel-and-screen-detail.jpg",
+      "role": "Display bezel and screen detail",
+      "source": "Cropped from generated photographic concept sheet",
+      "notes": "Standalone crop extracted from a generated photographic contact sheet; inspect before live use. Product appearance and any visible on-device marks are illustrative, not verified NEXIO SKUs/specifications."
+    },
+    {
+      "file": "Images/09-ops-and-connectivity.jpg",
+      "role": "Ops And Connectivity",
+      "source": "Cropped from generated photographic concept sheet",
+      "notes": "Standalone crop extracted from a generated photographic contact sheet; inspect before live use. Product appearance and any visible on-device marks are illustrative, not verified NEXIO SKUs/specifications."
+    }
+  ],
+  "usage_rules": [
+    "Do not describe sample products, model names, size labels, specifications, warranties or performance as verified facts.",
+    "Remove or replace any generated brand/signage text that appears in a crop before public launch.",
+    "Keep the original clean classroom hero as the preferred primary visual until client product photography is available.",
+    "Use images as web visuals only after visual QA at desktop and mobile crops."
+  ]
+}

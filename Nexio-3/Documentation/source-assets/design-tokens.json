@@ -1,0 +1,32 @@
+{
+  "concept": "Bold Future",
+  "brand": "NEXIO",
+  "colors": {
+    "primary": {
+      "value": "#DD5739"
+    },
+    "ink": {
+      "value": "#171717"
+    },
+    "paper": {
+      "value": "#F3F0E8"
+    },
+    "surface": {
+      "value": "#DCD7CE"
+    },
+    "accent": {
+      "value": "#DD5739"
+    }
+  },
+  "theme": {
+    "default": "light",
+    "persist": "localStorage",
+    "followSystemPreference": false
+  },
+  "breakpoints": {
+    "mobile": "360\u2013767px",
+    "tablet": "768\u20131023px",
+    "laptop": "1024\u20131279px",
+    "desktop": "1280px and above"
+  }
+}
