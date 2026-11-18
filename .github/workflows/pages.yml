@@ -15,22 +15,40 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: Nexio-*/package-lock.json
+          node-version: 24
 
-      - name: Build the three concepts as static sites
+      - name: Install Nexio-1
+        working-directory: Nexio-1
+        run: npm ci --no-audit --no-fund
+      - name: Build Nexio-1 (static)
+        working-directory: Nexio-1
+        run: npm run build:pages
+
+      - name: Install Nexio-2
+        working-directory: Nexio-2
+        run: npm ci --no-audit --no-fund
+      - name: Build Nexio-2 (static)
+        working-directory: Nexio-2
+        run: npm run build:pages
+
+      - name: Install Nexio-3
+        working-directory: Nexio-3
+        run: npm ci --no-audit --no-fund
+      - name: Build Nexio-3 (static)
+        working-directory: Nexio-3
+        run: npm run build:pages
+
+      - name: Assemble site
         run: |
           mkdir -p site
-          for i in 1 2 3; do
-            (cd "Nexio-$i" && npm ci --no-audit --no-fund && npm run build:pages)
-            cp -r "Nexio-$i/out" "site/Nexio-$i"
-          done
+          for i in 1 2 3; do cp -r "Nexio-$i/out" "site/Nexio-$i"; done
           cp pages-landing/index.html site/index.html
           touch site/.nojekyll
 
